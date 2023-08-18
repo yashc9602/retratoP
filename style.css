@@ -30,7 +30,7 @@ p {
 
 
 .underline {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 /* FIRST PAGE ANIMATION */
@@ -87,6 +87,8 @@ p.italic {
   margin-bottom: 0;
 }
 
+
+
 /* INNOVATION */
 
 .jaadu {
@@ -101,18 +103,18 @@ p.italic {
 }
 
 .j1 {
-  font-size: clamp(2rem, 4vw, 4rem);
+  font-size: clamp(1rem, 4vw, 4rem);
   margin-bottom: 1rem;
 }
 
 .j2 {
   font-style: italic;
-  text-decoration: underline;
-  font-size: clamp(2rem, 10vw, 8rem);
+  /* text-decoration: underline; */
+  font-size: clamp(2rem, 9vw, 8rem);
 }
 
 .j3 {
-  font-size: clamp(2rem, 4vw, 4rem);
+  font-size: clamp(1rem, 4vw, 4rem);
   align-self: flex-end;
 }
 
@@ -183,7 +185,7 @@ p.italic {
 
 .logoo {
   text-align: center;
-  max-width: 10rem;
+  max-width: 20rem;
   justify-content: center;
   align-items: center;
   margin-bottom: 4%;
@@ -198,7 +200,7 @@ p.italic {
 .talk {
   letter-spacing: 5px;
   margin-top: 0;
-  font-size: clamp(2rem, 2vw, 4rem);
+  font-size: clamp(2rem, 4vw, 4rem);
   text-align: start;
   font-weight: 100;
   opacity: 0.8;
@@ -406,4 +408,61 @@ a:hover:after {
   opacity: 0.5;
 }
 
+
+.top-left {
+  font-size: clamp(1rem, 1vw, 4rem);
+  position: relative;
+  justify-content: flex-start;
+  margin-bottom: 20%;
+  padding: 0;
+  padding-bottom: 1rem;
+}
+
+.center {
+  font-size: clamp(2rem, 8vw, 8rem);
+  justify-content: center;
+  align-self: center;
+}
+
+.bottom-right {
+  margin-top: 35%;
+  font-size: clamp(1rem, 1.5vw, 4rem);
+  position: relative;
+  text-align: end;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .first {
+    overflow: hidden;
+  }
+
+  .top-left{
+    position: relative;
+    font-size: clamp(0.7rem, 1.5vw, 4rem);
+    
+    
+  }
+
+  .center{
+
+  }
+
+  .bottom-right{
+    position: relative;
+    font-size: clamp(0.7rem, 1.5vw, 4rem);
+    justify-content:flex-start;
+    align-items: flex-start;
+  }
+
+  .cursor{
+    display: none;
+  }
+
+  .cursor2{
+    display: none;
+  }
+
+}
 
