@@ -28,21 +28,23 @@ p {
   font-weight: 300;
 }
 
-h1 {
+/* h1 {
   font-size: clamp(2rem, 4vw, 8rem);
   color: black;
-}
+} */
 
 .underline {
   text-decoration: underline;
 }
 
-.medium {
+/* .medium {
   font-size: clamp(1rem, 2vw, 4rem);
   color: black;
   line-height: 1.5;
   float: right;
-}
+} */
+
+/* FIRST PAGE ANIMATION */
 
 .fade-out-up,
 .fade-out-down,
@@ -54,13 +56,13 @@ h1 {
   margin: 3.5rem;
 }
 
-.bottom {
+/* .bottom {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
+} */
 
 .italic {
   font-style: italic;
@@ -77,10 +79,8 @@ h1 {
 }
 
 .top-left {
-  font-size: clamp(2rem, 1.5vw, 4rem);
+  font-size: clamp(1rem, 1vw, 4rem);
   position: relative;
-  /* right: 90%;
-  bottom: 10%; */
   justify-content: flex-start;
   margin-bottom: 20%;
   padding: 0;
@@ -88,19 +88,16 @@ h1 {
 }
 
 .center {
-  font-size: clamp(1rem, 8vw, 8rem);
+  font-size: clamp(2rem, 8vw, 8rem);
   justify-content: center;
   align-self: center;
 }
 
 .bottom-right {
   margin-top: 35%;
-  font-size: clamp(2rem, 1.5vw, 4rem);
+  font-size: clamp(1rem, 1.5vw, 4rem);
   position: relative;
   text-align: end;
-  /* align-items: flex-end; */
-  /* left: 45%;
-  top: 10%; */
 }
 
 /* ---------------------- */
@@ -108,6 +105,8 @@ h1 {
 p.italic {
   margin-bottom: 0;
 }
+
+/* INNOVATION */
 
 .jaadu {
   position: relative;
@@ -123,54 +122,26 @@ p.italic {
 }
 
 .j1 {
-  font-size: 5rem;
+  font-size: clamp(2rem, 1.5vw, 4rem);
   margin-bottom: 1rem;
 }
 
 .j2 {
   font-style: italic;
   text-decoration: underline;
-  font-size: 10rem;
-  /* color: red; */
+  font-size: clamp(2rem, 2vw, 4rem);
 }
 
 .j3 {
-  font-size: 5rem;
+  font-size: clamp(2rem, 1.5vw, 4rem);
   align-self: flex-end;
 }
 
 .j4 {
-  font-size: 5rem;
+  font-size: clamp(2rem, 1.5vw, 4rem);
   align-self: flex-end;
 }
 
-.animation-container {
-  display: flex;
-  align-items: center;
-  font-size: 2rem;
-  height: 50vh; /* Adjust as needed */
-}
-
-.dot-text {
-  position: relative;
-  display: inline-block;
-}
-
-.dot {
-  font-size: 2rem;
-  opacity: 1;
-  position: absolute;
-  margin-bottom: 0;
-  left: 0;
-  top: 0;
-}
-
-.text {
-  font-size: 1.5rem;
-  opacity: 0;
-  margin-left: 0.5rem; /* Adjust spacing between dot and text */
-  font-weight: 100;
-}
 
 /* TIMER */
 
@@ -183,7 +154,7 @@ p.italic {
 .container.counter {
   color: black;
   text-align: center;
-  font-size: 3rem;
+  font-size: clamp(1rem, 2vw, 4rem);
   margin-top: 3rem;
 }
 
@@ -204,36 +175,17 @@ p.italic {
   font-size: 4.5rem;
 }
 
-.bottom {
-  z-index: 1;
-  height: 100vh;
-}
-
-/* .ball {
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  border: 3px solid black;
-  border-radius: 50%;
-  pointer-events: none;
-} */
 
 /* ---------------------------- */
 
 .footer {
-  height: 50vh; /* Set a suitable height */
+  height: 50vh; 
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
 }
 
-/* .black {
-  background-color: black;
-  color: white;
-} */
 
 .last {
   background-color: black;
@@ -244,17 +196,6 @@ p.italic {
   justify-content: center;
 }
 
-.love {
-  color: white;
-  font-size: 2rem;
-  margin-bottom: 10rem;
-  text-align: center;
-  justify-content: flex-start;
-  letter-spacing: 5px;
-  font-weight: 100;
-  margin-bottom: 0;
-}
-
 .logoo {
   text-align: center;
 }
@@ -263,7 +204,7 @@ p.italic {
 
 .logoo {
   text-align: center;
-  max-width: 30%;
+  max-width: 10rem;
   justify-content: center;
   align-items: center;
   margin-bottom: 4%;
@@ -278,7 +219,7 @@ p.italic {
 .talk {
   letter-spacing: 5px;
   margin-top: 0;
-  font-size: 3rem;
+  font-size: clamp(2rem, 2vw, 4rem);
   text-align: start;
   font-weight: 100;
   opacity: 0.8;
@@ -411,7 +352,7 @@ p.italic {
   /* transition: 1s all ease-out; */
 }
 
-/* -------------------- */
+/* CARET */
 
 * {
   cursor: none;
