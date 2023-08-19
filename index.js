@@ -161,37 +161,8 @@ document.addEventListener('mousemove', (e) => {
         // cursor.style.backgroundColor = 'black';
         cursor2.style.backgroundColor = 'black';
     }
-
-    // Position the cursor at the mouse coordinates
-    // cursor.style.left = `${clientX}px`;
-    // cursor.style.top = `${clientY}px`;
-    // cursor2.style.left = `${clientX}px`;
-    // cursor2.style.top = `${clientY}px`;
 });
 
-
-
-
-
-// -----------------------------
-
-// const lastSection = document.querySelector('.footer.last');
-
-// ScrollTrigger.create({
-//   trigger: '.bottom',
-//   start: 'top 75%', /* Adjust the start position as needed */
-//   end: 'center 60%',
-//   markers: false,
-//   onEnter: () => {
-//     gsap.to(lastSection, { bottom: 0 });
-//   },
-//   onLeaveBack: () => {
-//     gsap.to(lastSection, { bottom: '-100%' });
-//   },
-// });
-
-
-underlineEle.style.textDecoration = "underline";
 const lenis = new Lenis();
 
 lenis.on("scroll", (e) => {

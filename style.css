@@ -38,7 +38,7 @@ p {
 .fade-out-up,
 .fade-out-down,
 .zoom-out {
-  line-height: 5rem;
+  /* line-height: 5rem; */
   opacity: 1;
   transform: translateY(0) scale(3);
   transition: opacity 1, transform 2s;
