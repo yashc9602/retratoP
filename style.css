@@ -408,8 +408,6 @@ a:hover:after {
 }
 
 
-
-
 .center {
   font-size: clamp(2rem, 8vw, 8rem);
   justify-content: center;
@@ -430,6 +428,8 @@ a:hover:after {
 .bottom-right{
   padding-top: 1rem;
 }
+
+
 @media only screen and (max-width: 900px) {
   .first {
     overflow: hidden;
@@ -459,4 +459,5 @@ a:hover:after {
   }
 
 }
+
 

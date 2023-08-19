@@ -62,7 +62,7 @@ gsap.to(".fade-out-down", {
 gsap.to(".j2", {
     marginBottom: "0",
     paddingBottom: "0",
-    borderBottom: "1rem solid rgba(0, 0, 0, 1)",
+    borderBottom: "clamp(0.3rem, 1vw, 4rem) solid rgba(0, 0, 0, 1)",
 
     scrollTrigger: {
         trigger: ".j2",
