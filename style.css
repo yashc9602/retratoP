@@ -22,12 +22,29 @@ p {
 .underline{
   text-decoration: underline;
 }
+
 .small {
   font-size: clamp(1rem, 2vw, 4rem);
   color: black;
   line-height: 1.5;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+  word-break: normal;
+}
+
+.small p{
+  word-wrap: break-word;
+  word-break: normal;
+  word-break: break-all;
+  word-break: break-word;
+  
+}
+
+.trust{
+  font-size: clamp(2.2rem, 4vw, 8rem);
+  color: black;
+  line-height: 1.5;
+  font-style: italic;
 }
 
 
