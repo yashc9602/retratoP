@@ -430,7 +430,7 @@ a:hover:after {
 .bottom-right{
   padding-top: 1rem;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .first {
     overflow: hidden;
   }
