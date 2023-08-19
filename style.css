@@ -19,7 +19,9 @@ p {
   color: black;
   line-height: 1.5;
 }
-
+.underline{
+  text-decoration: underline;
+}
 .small {
   font-size: clamp(1rem, 2vw, 4rem);
   color: black;
@@ -32,11 +34,11 @@ p {
 .fade-out-up,
 .fade-out-down,
 .zoom-out {
-  line-height: 5rem;
+  /* line-height: 5rem; */
   opacity: 1;
   transform: translateY(0) scale(3);
   transition: opacity 1, transform 2s;
-  margin: 3.5rem;
+  margin: 1rem;
 }
 
 .italic {
@@ -51,14 +53,7 @@ p {
   font-family: "Libre Baskerville", serif;
 }
 
-.top-left {
-  font-size: clamp(1rem, 1vw, 4rem);
-  position: relative;
-  justify-content: flex-start;
-  margin-bottom: 20%;
-  padding: 0;
-  padding-bottom: 1rem;
-}
+
 
 .center {
   font-size: clamp(2rem, 8vw, 8rem);
@@ -66,12 +61,6 @@ p {
   align-self: center;
 }
 
-.bottom-right {
-  margin-top: 35%;
-  font-size: clamp(1rem, 1.5vw, 4rem);
-  position: relative;
-  text-align: end;
-}
 
 /* ---------------------- */
 
@@ -103,6 +92,7 @@ p.italic {
   font-style: italic;
   /* text-decoration: underline; */
   font-size: clamp(2rem, 9vw, 8rem);
+  border-bottom: 1px;
 }
 
 .j3 {
@@ -401,14 +391,7 @@ a:hover:after {
 }
 
 
-.top-left {
-  font-size: clamp(1rem, 1vw, 4rem);
-  position: relative;
-  justify-content: flex-start;
-  margin-bottom: 20%;
-  padding: 0;
-  padding-bottom: 1rem;
-}
+
 
 .center {
   font-size: clamp(2rem, 8vw, 8rem);
@@ -424,24 +407,31 @@ a:hover:after {
 }
 
 
-
+.top-left{
+  padding-bottom: 2rem;
+}
+.bottom-right{
+  padding-top: 1rem;
+}
 @media only screen and (max-width: 800px) {
   .first {
     overflow: hidden;
   }
+  .top-left {
+    font-size: clamp(0.7rem, 1.5vw, 4rem);
+    position: relative;
+    justify-content: flex-start;
+    margin-bottom: 0%;
+    padding-bottom: 0.8rem;
+  }
 
-  .top-left{
-    position: relative;
-    font-size: clamp(0.7rem, 1.5vw, 4rem);
-    
-    
-  }
-.bottom-right{
-    position: relative;
-    font-size: clamp(0.7rem, 1.5vw, 4rem);
-    justify-content:flex-start;
-    align-items: flex-start;
-  }
+  .bottom-right{
+      position: relative;
+      font-size: clamp(0.7rem, 1.5vw, 4rem);
+      justify-content:flex-start;
+      align-items: flex-start;
+      padding-top:0.2rem ;
+    }
 
   .cursor{
     display: none;

@@ -35,14 +35,13 @@ gsap.to(".fade-out-up", {
 
 gsap.to(".zoom-out", {
     opacity: 0,
-    scale: 22,
-    y: 500,
+    scale: 22, // Reset the scale for responsiveness
+    y: 0, // Reset the y-axis movement for responsiveness
     delay: 0.25,
-    // borderBottom: "1px solid black",
     scrollTrigger: {
         trigger: ".sentence",
-        start: "bottom 90%",
-        end: "bottom 40%",
+        start: ".sentence", // Adjust trigger points for responsiveness
+        end: "bottom 20%", // Adjust trigger points for responsiveness
         scrub: true,
         markers: false,
     },
@@ -200,7 +199,4 @@ function myFunction() {
         document.getElementsByClassName("arrow").className = "";
     }
 }
-
-
-// RESPONSIVE
 
