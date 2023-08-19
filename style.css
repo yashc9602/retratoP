@@ -41,7 +41,7 @@ p {
 }
 
 .trust{
-  font-size: clamp(2.2rem, 4vw, 8rem);
+  font-size: clamp(2.4rem, 4vw, 8rem);
   color: black;
   line-height: 1.5;
   font-style: italic;
